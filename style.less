@@ -160,12 +160,14 @@ section:last-child {
 }
 
 .listMixin(@columnCount: 1) {
-  .column-count(3);
+  .column-count(@columnCount);
   list-style-type : none;
   margin-bottom   : 20px;
   font-size       : 1em;
   color           : rgb(68, 68, 68);
 }
+
+.techList { .listMixin(2); margin-left : 1em; list-style : disc inside; }
 
 .languageList { .listMixin(2); }
 
